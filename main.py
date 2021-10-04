@@ -257,13 +257,13 @@ class Music(commands.Cog):
                 await channel.connect()
             except asyncio.TimeoutError:
                 raise VoiceConnectionError(f'Connecting to channel: <{channel}> timed out.')
-        if (random.randint(0, 1) == 0):
+        if random.randint(0, 1) == 0:
             await ctx.message.add_reaction('👍')
         await ctx.send(f'**Joined `{channel}`**')
 
     @commands.command(name='play', aliases=['sing', 'p'], description="streams music")
     async def play_(self, ctx, *, search: str):
-        """Yêu cầu 1 bài hát và thêm vào hàng đợi.
+        """Yêu cầu 1 bài hát và thêm vào hàng đợi. Command tương tự: sing, p.
         This command attempts to join a valid voice channel if the bot is not already in one.
         Uses YTDL to automatically search and retrieve a song.
         Parameters
@@ -335,7 +335,7 @@ class Music(commands.Cog):
 
     @commands.command(name='remove', aliases=['rm', 'rem'], description="removes specified song from queue")
     async def remove_(self, ctx, pos: int = None):
-        """Xóa bài hát củ thể khỏi hàng đợi"""
+        """Xóa bài hát củ thể khỏi hàng đợi. Command tương tự: rm, rem."""
 
         vc = ctx.voice_client
 
@@ -362,7 +362,7 @@ class Music(commands.Cog):
 
     @commands.command(name='clear', aliases=['clr', 'cl', 'cr'], description="clears entire queue")
     async def clear_(self, ctx):
-        """Xóa hết tất cả bài hát trong hàng đợi."""
+        """Xóa hết tất cả bài hát trong hàng đợi. Command tương tự: clr, cl, cr."""
 
         vc = ctx.voice_client
 
@@ -377,7 +377,7 @@ class Music(commands.Cog):
 
     @commands.command(name='queue', aliases=['q', 'playlist', 'que'], description="shows the queue")
     async def queue_info(self, ctx):
-        """Xem thứ tự các bài hát đang trong hàng đợi."""
+        """Xem thứ tự các bài hát đang trong hàng đợi. Command tương tự: q, playlist, que."""
         vc = ctx.voice_client
 
         if not vc or not vc.is_connected():
@@ -414,7 +414,7 @@ class Music(commands.Cog):
     @commands.command(name='np', aliases=['song', 'current', 'currentsong', 'playing'],
                       description="shows the current playing song")
     async def now_playing_(self, ctx):
-        """Hiện thị thông tin các bài hát hiện tại."""
+        """Hiện thị thông tin các bài hát hiện tại. Command tương tự: song, current, curenntsong, playing."""
         vc = ctx.voice_client
 
         if not vc or not vc.is_connected():
@@ -446,7 +446,7 @@ class Music(commands.Cog):
 
     @commands.command(name='volume', aliases=['vol', 'v'], description="changes Kermit's volume")
     async def change_volume(self, ctx, *, vol: float = None):
-        """Thay đôi âm lượng của 1 Bot.
+        """Thay đôi âm lượng của 1 Bot. Command tương tự: vol, v.
         Parameters
         ------------
         volume: float or int [Required]
@@ -482,7 +482,7 @@ class Music(commands.Cog):
     @commands.command(name='leave', aliases=["stop", "dc", "disconnect", "bye"],
                       description="stops music and disconnects from voice")
     async def leave_(self, ctx):
-        """Dừng bài hát và kích cmn bot ra khỏi voice.
+        """Dừng bài hát và kích cmn bot ra khỏi voice. command tương đương: stop, dc, disconnect, bye
         !Warning!
             This will destroy the player assigned to your guild, also deleting any queued songs and settings.
         """
@@ -499,7 +499,17 @@ class Music(commands.Cog):
 
         await self.cleanup(ctx.guild)
 
+    @commands.command(name='credit', aliases=["author"],
+                      description="stops music and disconnects from voice")
+    async def credit_(self, ctx):
+        """Bản quyền thuộc về Trần Tuấn Thành."""
+        vc = ctx.voice_client
+        embed = discord.Embed(title="",
+                              description=f"[Trần Tuấn Thành](https://www.facebook.com/trantuanthanh0803/) [{vc.source.requester.mention}]",
+                              color=discord.Color.green())
+        await ctx.send(embed=embed)
 
-if __name__ == "__main__" :
+
+if __name__ == "__main__":
     bot.add_cog(Music(bot))
     bot.run(DISCORD_TOKEN)
