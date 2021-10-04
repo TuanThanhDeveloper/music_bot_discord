@@ -263,13 +263,8 @@ class Music(commands.Cog):
 
     @commands.command(name='play', aliases=['sing', 'p'], description="streams music")
     async def play_(self, ctx, *, search: str):
-        """Yêu cầu 1 bài hát và thêm vào hàng đợi. Command tương tự: sing, p.
-        This command attempts to join a valid voice channel if the bot is not already in one.
-        Uses YTDL to automatically search and retrieve a song.
-        Parameters
-        ------------
-        search: str [Required]
-            The song to search and retrieve using YTDL. This could be a simple search, an ID or URL.
+        """Yêu cầu 1 bài hát và thêm vào hàng đợi.
+        Command tương tự: sing, p.
         """
         await ctx.trigger_typing()
 
@@ -335,7 +330,8 @@ class Music(commands.Cog):
 
     @commands.command(name='remove', aliases=['rm', 'rem'], description="removes specified song from queue")
     async def remove_(self, ctx, pos: int = None):
-        """Xóa bài hát củ thể khỏi hàng đợi. Command tương tự: rm, rem."""
+        """Xóa bài hát củ thể khỏi hàng đợi.
+         Command tương tự: rm, rem."""
 
         vc = ctx.voice_client
 
@@ -362,7 +358,8 @@ class Music(commands.Cog):
 
     @commands.command(name='clear', aliases=['clr', 'cl', 'cr'], description="clears entire queue")
     async def clear_(self, ctx):
-        """Xóa hết tất cả bài hát trong hàng đợi. Command tương tự: clr, cl, cr."""
+        """Xóa hết tất cả bài hát trong hàng đợi.
+         Command tương tự: clr, cl, cr."""
 
         vc = ctx.voice_client
 
@@ -377,7 +374,8 @@ class Music(commands.Cog):
 
     @commands.command(name='queue', aliases=['q', 'playlist', 'que'], description="shows the queue")
     async def queue_info(self, ctx):
-        """Xem thứ tự các bài hát đang trong hàng đợi. Command tương tự: q, playlist, que."""
+        """Xem thứ tự các bài hát đang trong hàng đợi.
+        Command tương tự: q, playlist, que."""
         vc = ctx.voice_client
 
         if not vc or not vc.is_connected():
@@ -414,7 +412,8 @@ class Music(commands.Cog):
     @commands.command(name='np', aliases=['song', 'current', 'currentsong', 'playing'],
                       description="shows the current playing song")
     async def now_playing_(self, ctx):
-        """Hiện thị thông tin các bài hát hiện tại. Command tương tự: song, current, curenntsong, playing."""
+        """Hiện thị thông tin các bài hát hiện tại.
+        Command tương tự: song, current, curenntsong, playing."""
         vc = ctx.voice_client
 
         if not vc or not vc.is_connected():
@@ -446,7 +445,8 @@ class Music(commands.Cog):
 
     @commands.command(name='volume', aliases=['vol', 'v'], description="changes Kermit's volume")
     async def change_volume(self, ctx, *, vol: float = None):
-        """Thay đôi âm lượng của 1 Bot. Command tương tự: vol, v.
+        """Thay đôi âm lượng của 1 Bot.
+        Command tương tự: vol, v.
         Parameters
         ------------
         volume: float or int [Required]
@@ -482,7 +482,8 @@ class Music(commands.Cog):
     @commands.command(name='leave', aliases=["stop", "dc", "disconnect", "bye"],
                       description="stops music and disconnects from voice")
     async def leave_(self, ctx):
-        """Dừng bài hát và kích cmn bot ra khỏi voice. command tương đương: stop, dc, disconnect, bye
+        """Dừng bài hát và kích cmn bot ra khỏi voice.
+        Command tương đương: stop, dc, disconnect, bye
         !Warning!
             This will destroy the player assigned to your guild, also deleting any queued songs and settings.
         """
@@ -505,7 +506,7 @@ class Music(commands.Cog):
         """Bản quyền thuộc về Trần Tuấn Thành."""
         vc = ctx.voice_client
         embed = discord.Embed(title="",
-                              description=f"[Trần Tuấn Thành](https://www.facebook.com/trantuanthanh0803/) [{vc.source.requester.mention}]",
+                              description=f"[Author: Trần Tuấn Thành](https://www.facebook.com/trantuanthanh0803/) [{vc.source.requester.mention}]",
                               color=discord.Color.green())
         await ctx.send(embed=embed)
 
