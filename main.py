@@ -225,7 +225,7 @@ class Music(commands.Cog):
 
     @commands.command(name='join', aliases=['connect', 'j'], description="connects to voice")
     async def connect_(self, ctx, *, channel: discord.VoiceChannel = None):
-        """Connect to voice.
+        """Kết nối đến voice chat.
         Parameters
         ------------
         channel: discord.VoiceChannel [Optional]
@@ -263,7 +263,7 @@ class Music(commands.Cog):
 
     @commands.command(name='play', aliases=['sing', 'p'], description="streams music")
     async def play_(self, ctx, *, search: str):
-        """Request a song and add it to the queue. Tran Tuan Thanh
+        """Yêu cầu 1 bài hát và thêm vào hàng đợi.
         This command attempts to join a valid voice channel if the bot is not already in one.
         Uses YTDL to automatically search and retrieve a song.
         Parameters
@@ -288,7 +288,7 @@ class Music(commands.Cog):
 
     @commands.command(name='pause', description="pauses music")
     async def pause_(self, ctx):
-        """Pause the currently playing song."""
+        """Dừng bài hát hiện tại."""
         vc = ctx.voice_client
 
         if not vc or not vc.is_playing():
@@ -303,7 +303,7 @@ class Music(commands.Cog):
 
     @commands.command(name='resume', description="resumes music")
     async def resume_(self, ctx):
-        """Resume the currently paused song."""
+        """Tiếp tục bài hát hiện tại."""
         vc = ctx.voice_client
 
         if not vc or not vc.is_connected():
@@ -318,7 +318,7 @@ class Music(commands.Cog):
 
     @commands.command(name='skip', description="skips to next song in queue")
     async def skip_(self, ctx):
-        """Skip the song."""
+        """Skip bài hát."""
         vc = ctx.voice_client
 
         if not vc or not vc.is_connected():
@@ -335,7 +335,7 @@ class Music(commands.Cog):
 
     @commands.command(name='remove', aliases=['rm', 'rem'], description="removes specified song from queue")
     async def remove_(self, ctx, pos: int = None):
-        """Removes specified song from queue"""
+        """Xóa bài hát củ thể khỏi hàng đợi"""
 
         vc = ctx.voice_client
 
@@ -362,7 +362,7 @@ class Music(commands.Cog):
 
     @commands.command(name='clear', aliases=['clr', 'cl', 'cr'], description="clears entire queue")
     async def clear_(self, ctx):
-        """Deletes entire queue of upcoming songs."""
+        """Xóa hết tất cả bài hát trong hàng đợi."""
 
         vc = ctx.voice_client
 
@@ -377,7 +377,7 @@ class Music(commands.Cog):
 
     @commands.command(name='queue', aliases=['q', 'playlist', 'que'], description="shows the queue")
     async def queue_info(self, ctx):
-        """Retrieve a basic queue of upcoming songs."""
+        """Xem thứ tự các bài hát đang trong hàng đợi."""
         vc = ctx.voice_client
 
         if not vc or not vc.is_connected():
@@ -414,7 +414,7 @@ class Music(commands.Cog):
     @commands.command(name='np', aliases=['song', 'current', 'currentsong', 'playing'],
                       description="shows the current playing song")
     async def now_playing_(self, ctx):
-        """Display information about the currently playing song."""
+        """Hiện thị thông tin các bài hát hiện tại."""
         vc = ctx.voice_client
 
         if not vc or not vc.is_connected():
@@ -446,7 +446,7 @@ class Music(commands.Cog):
 
     @commands.command(name='volume', aliases=['vol', 'v'], description="changes Kermit's volume")
     async def change_volume(self, ctx, *, vol: float = None):
-        """Change the player volume.
+        """Thay đôi âm lượng của 1 Bot.
         Parameters
         ------------
         volume: float or int [Required]
@@ -482,7 +482,7 @@ class Music(commands.Cog):
     @commands.command(name='leave', aliases=["stop", "dc", "disconnect", "bye"],
                       description="stops music and disconnects from voice")
     async def leave_(self, ctx):
-        """Stop the currently playing song and destroy the player.
+        """Dừng bài hát và kích cmn bot ra khỏi voice.
         !Warning!
             This will destroy the player assigned to your guild, also deleting any queued songs and settings.
         """
