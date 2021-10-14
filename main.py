@@ -104,7 +104,7 @@ class YTDLSource(discord.PCMVolumeTransformer):
 
         return cls(discord.FFmpegPCMAudio(data['url'], **ffmpeg_opts), data=data,
                    requester=requester)
-# ,executable="E:\Downloads\\ffmpeg-N-104250-g05c1f78a72-win64-gpl\\bin\\ffmpeg.exe"
+# , executable="E:\Downloads\\ffmpeg-N-104250-g05c1f78a72-win64-gpl\\bin\\ffmpeg.exe"
 
 class MusicPlayer:
     """A class which is assigned to each guild using the bot for Music.
