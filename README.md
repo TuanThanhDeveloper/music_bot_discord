@@ -4,7 +4,7 @@
            + Download ffmpeg cho windows hoặc linux tại: https://github.com/BtbN/FFmpeg-Builds/releases.
            + Add đường dẫn .../bin sau khi giải nén lên Environment Variables phần Path khi sử dụng trên windows.
            + Thay đổi Discord token ở file main.py bằng token bot của bạn.
-           ![image](https://user-images.githubusercontent.com/49850839/145065980-d82faa83-4502-4763-801f-9fa041e42154.png)
+![image](https://user-images.githubusercontent.com/49850839/145065980-d82faa83-4502-4763-801f-9fa041e42154.png)
 # Hướng dẫn: run
            pip install -r requirements.txt
            python main.py
