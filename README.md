@@ -8,8 +8,9 @@
 # Hướng dẫn: run
            pip install -r requirements.txt
            python main.py
-# Bot có thể deploy lên Heroku (đọc hướng dẫn deploy discord bot lên server Heroku tại https://medium.com/@linda0511ny/create-host-a-discord-bot-with-heroku-in-5-min-5cb0830d0ff2)
-           
+Bot có thể deploy lên Heroku (đọc hướng dẫn deploy discord bot lên server Heroku tại https://medium.com/@linda0511ny/create-host-a-discord-bot-with-heroku-in-5-min-5cb0830d0ff2)
+Mọi thắc mắc liên hệ https://www.facebook.com/trantuanthanh0803/      
 # Buy me a coffee: 
                     + Momo 0971850315 Trần Tuấn Thành.
                     + 0071001261085 VCB Trần Tuấn Thành.
+                    
