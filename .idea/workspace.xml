@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a0d07e78-9a78-40ed-b658-fa4112434efa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +33,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Thuc tap tot nghiep" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -194,7 +193,17 @@
       <workItem from="1633312103982" duration="5658000" />
       <workItem from="1633318292112" duration="426000" />
       <workItem from="1633422909415" duration="1790000" />
-      <workItem from="1633614804208" duration="1013000" />
+      <workItem from="1633614804208" duration="1221000" />
+      <workItem from="1633658579684" duration="155000" />
+      <workItem from="1633857451530" duration="185000" />
+      <workItem from="1633873330096" duration="218000" />
+      <workItem from="1634089904423" duration="31000" />
+      <workItem from="1634220300342" duration="178000" />
+      <workItem from="1634220807020" duration="597000" />
+      <workItem from="1634221692199" duration="908000" />
+      <workItem from="1634282480747" duration="98000" />
+      <workItem from="1638277438399" duration="636000" />
+      <workItem from="1638345216203" duration="15000" />
     </task>
     <servers />
   </component>
@@ -220,7 +229,7 @@
     <SUITE FILE_PATH="coverage/socket_tcp$tcpclient.coverage" NAME="tcpclient Coverage Results" MODIFIED="1619668203109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/socket_tcp$prim.coverage" NAME="prim Coverage Results" MODIFIED="1619678129749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/socket_tcp$server1.coverage" NAME="server1 Coverage Results" MODIFIED="1620890972125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/bt$main.coverage" NAME="main Coverage Results" MODIFIED="1633615614370" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/bt$main.coverage" NAME="main Coverage Results" MODIFIED="1638277469854" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/socket_tcp$encrypt.coverage" NAME="encrypt Coverage Results" MODIFIED="1620882484648" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/attt$server1.coverage" NAME="server1 Coverage Results" MODIFIED="1620892810204" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/attt$UI.coverage" NAME="UI Coverage Results" MODIFIED="1622555319437" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
