@@ -1,5 +1,7 @@
 # bot_discord
 
+Đã có bot sẵn ở đây bạn có thể thêm vào channel của mình: https://discord.com/oauth2/authorize?client_id=894252104028405820&permissions=377993825792&scope=bot
+
 # Bot lấy nhạc từ youtube để phát trên channel discord.
 
 # Yêu cầu: + Python 3. 
