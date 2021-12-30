@@ -19,6 +19,8 @@ Bot có thể deploy lên Heroku (đọc hướng dẫn deploy discord bot lên 
 Mọi thắc mắc liên hệ https://www.facebook.com/trantuanthanh0803/      <br />
 <br />
 # Buy me a coffee: 
-                    + Momo 0971850315 Trần Tuấn Thành.
-                    + 0071001261085 VCB Trần Tuấn Thành.
+
+           + Momo 0971850315 Trần Tuấn Thành.
+           
+           + 0071001261085 VCB Trần Tuấn Thành.
                     
